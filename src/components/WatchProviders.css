@@ -1,0 +1,28 @@
+.watch-providers {
+  color: white;
+  font-weight: 1000;
+  overflow-y: scroll;
+  height: 10vh;
+}
+
+.watch-providers::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  background-color: rgb(33, 126, 176);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+li {
+  list-style-position: inside;
+  font-size: x-large;
+}

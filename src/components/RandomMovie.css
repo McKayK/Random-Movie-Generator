@@ -1,0 +1,37 @@
+.movieTitle {
+  color: white;
+  position: absolute;
+  top: -50px;
+  font-size: xx-large;
+}
+
+.movie-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+/* .movie-card {
+  display: -ms-inline-grid;
+  grid-template-rows: 50px 50px;
+  grid-template-columns: 50px 50px;
+  grid-gap: 10px;
+} */
+
+#movie-desc {
+  background-color: rgb(33, 126, 176);
+  color: white;
+  font-weight: 1000;
+  padding: 10px;
+  border-radius: 5px;
+  width: 25%;
+}
+
+#movie-image {
+  margin: 25px 30px 0px 12px;
+  height: 40%;
+  width: 20%;
+  border-radius: 5px;
+  box-shadow: 0 0 50px 15px #ffffff;
+}
