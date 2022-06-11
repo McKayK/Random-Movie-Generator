@@ -2,17 +2,20 @@ import React from "react";
 import "./WatchProviders.css";
 
 const WatchProviders = ({ watchProviders }) => {
-  const streamingPlatforms = watchProviders.map((streamingService) => {
-    return (
-      <ul>
-        <li>{streamingService.provider_name}</li>
-      </ul>
-    );
-  });
+  let streamingPlatforms;
+  if (watchProviders) {
+    streamingPlatforms = watchProviders.map((streamingService) => {
+      return (
+        <li key={streamingService.provider_name}>
+          {streamingService.provider_name}
+        </li>
+      );
+    });
+  }
   return (
     <div className="container">
       <h1>Streaming Platforms:</h1>
-      <div className="watch-providers">{streamingPlatforms}</div>
+      <ul className="watch-providers">{streamingPlatforms}</ul>
     </div>
   );
 };

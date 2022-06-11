@@ -15,10 +15,8 @@ const RandomMovie = () => {
       setMovie(res.data.title);
       setMoviePoster(res.data.poster_path);
       setDesc(res.data.overview);
-      if (res.data.results.US.flatrate) {
+      if (res.data.results.US) {
         setWatchProviders(res.data.results.US.flatrate);
-      } else {
-        setWatchProviders([]);
       }
     });
   };
